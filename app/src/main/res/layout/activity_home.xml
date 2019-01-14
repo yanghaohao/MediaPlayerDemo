@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_home"
+    tools:context=".ui.activity.HomeActivity">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dl_home">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:title="我的音乐"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/tl_home">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/h"
+                    android:id="@+id/tv_home_more"
+                    android:paddingRight="10dp"
+                    android:tint="@color/rule_background"
+                    android:layout_gravity="right"/>
+            </android.support.v7.widget.Toolbar>
+            <include layout="@layout/list_cut_off_rule"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <include layout="@layout/list"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_gravity="left"
+            android:background="@color/colorAccent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/t"
+                android:text=">>>>"/>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

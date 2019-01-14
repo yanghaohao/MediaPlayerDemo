@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/res-auto"
+    package="com.example.yanghao.mediaplayerdemo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.PlayActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <service android:name=".service.MusicService"/>
+        <receiver android:name=".service.MusicService$MusicRecevier">
+            <intent-filter>
+                <action android:name="com.example.notification.ServiceReceiver.last"/>
+                <action android:name="com.example.notification.ServiceReceiver.play"/>
+                <action android:name="com.example.notification.ServiceReceiver.next"/>
+                <action android:name="com.example.notification.ServiceReceiver.complete"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

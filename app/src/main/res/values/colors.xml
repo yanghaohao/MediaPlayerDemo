@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="list_rule_off">#e2e2e2</color>
+    <color name="rule_background">#b6b6b6</color>
+    <color name="theme_blue">#1fa9df</color>
+    <color name="lcy_background">#818181</color>
+    <color name="status_background">#333333</color>
+</resources>

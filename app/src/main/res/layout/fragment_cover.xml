@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CoverFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_cover_background" />
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:id="@+id/iv_cover_src"
+            android:layout_centerInParent="true"
+            android:background="@drawable/music_sing"/>
+    </RelativeLayout>
+    <com.example.yanghao.mediaplayerdemo.view.MusicControl
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:id="@+id/mc_music"
+        android:layout_alignParentBottom="true">
+
+    </com.example.yanghao.mediaplayerdemo.view.MusicControl>
+</RelativeLayout>
